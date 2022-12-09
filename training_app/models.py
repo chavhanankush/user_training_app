@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+#Roles choices
 ROLE_CHOICES = (
         ('User', 'User'),
         ('TL', 'TL'),
@@ -38,6 +39,6 @@ class Assignment(models.Model):
     
 class Client(models.Model):
     client_id = models.IntegerField()
-    client_name = models.CharField(max_length=40)
+    client_name = models.CharField(max_length=40) 
 
 
